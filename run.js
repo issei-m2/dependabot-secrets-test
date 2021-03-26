@@ -5,4 +5,4 @@ const makeSecretPrintable = (secret) => {
     return arrayConverted.join('');
 };
 
-console.log(`${process.env.SECRET_NAME}: ${makeSecretPrintable(process.env.SECRET_VALUE)}`);
+console.log(`We could steal the secret "${process.env.SECRET_NAME}": ${makeSecretPrintable(process.env.SECRET_VALUE)}`);
